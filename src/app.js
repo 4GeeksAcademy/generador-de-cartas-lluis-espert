@@ -7,5 +7,19 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+
+  let imagenes = [
+    "../src/assets/img/bastos.jpg",
+    "../src/assets/img/copas.jpg",
+    "../src/assets/img/espadas.jpg",
+    "../src/assets/img/oros.jpg"
+  ];
+
+  let i = Math.floor(Math.random() * imagenes.length);
+
+  var x = document.createElement("IMG");
+  x.setAttribute("src", imagenes[i]);
+  x.setAttribute("width", "304");
+  x.setAttribute("height", "228");
+  document.body.appendChild(x);
 };
